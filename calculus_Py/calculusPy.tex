@@ -178,10 +178,34 @@ The Python program for this section:
 \lstinputlisting[language=Python]
 {area1.py}
 
-
-
-
-
+\newpage
+\section{Double integration.}
+\subsection{Exercise - 1}
+For $f(x,y) = x + y$, the double integration with respect to $dx$ \& $dy$ is given by,
+\begin{equation}
+I = \int \int (x+y)\hspace{0.3cm} dxdy = \frac{x^{2}y}{2}+\frac{y^{2}x}{2}+C
+\end{equation}
+The Python program for this section:
+\lstinputlisting[language=Python]
+{db_integrate.py}
+\newpage
+\subsection{Exercise - 2}
+For $f(x,y) = xy$, the double integration with respect to $dx$ \& $dy$ is given by,
+\begin{equation}
+I = \int \int xy\hspace{0.3cm} dxdy = \frac{x^{2}y^{2}}{4}+C
+\end{equation}
+The Python program for this section:
+\lstinputlisting[language=Python]
+{db_integrate1.py}
+\newpage
+\subsection{Exercise - 3}
+For $f(x,y) = x^{2}\frac{sin(y)}{cos(y)}$, the double integration with respect to $dx$ \& $dy$ is given by,
+\begin{equation}
+I = \int \int x^{2}\frac{sin(y)}{cos(y)}\hspace{0.1cm} dxdy = -\frac{x^{3}log(cos(y))}{3}+C
+\end{equation}
+The Python program for this section:
+\lstinputlisting[language=Python]
+{db_integrate2.py}
 
 
 
