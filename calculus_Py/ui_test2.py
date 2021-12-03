@@ -8,6 +8,7 @@ import numpy as np
 x = sym.symbols('x')
 i = input('f(x) = ')
 
+print('NOTE: for pi type np.pi .')
 xmin = eval((input('xmin = ')))
 xmax = eval((input('xmax = ')))
 
