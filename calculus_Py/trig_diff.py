@@ -7,8 +7,8 @@ import sympy as sym
 import sympy.plotting.plot as symplot
 
 x = sym.symbols('x')
-
-f = sym.cos(x)
+i = input('f(x) = ')
+f = sym.sympify(i)
 df = sym.diff(f)
 
 p = symplot(f,(x,0,10),show=False)

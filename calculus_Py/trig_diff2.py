@@ -7,8 +7,10 @@ import sympy as sym
 import sympy.plotting.plot as symplot
 
 x,a = sym.symbols('x,a')
+print("Let the independent variable be 'x' and a costant be 'a' which varies from 0 to 3. ")
+i = input('f(x) = ')
 color = 'brkm'
-fx = sym.sin(x + sym.cos(x)) + a
+fx = sym.sympify(i)
 
 
 

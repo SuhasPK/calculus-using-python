@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 
 
 x = sym.symbols('x')
-fx = x**2
+i = input('f(x) = ')
+fx = sym.sympify(i)
 
 dfx = sym.diff(fx)
 

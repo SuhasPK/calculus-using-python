@@ -6,6 +6,7 @@ import sympy as sym
 import matplotlib.pyplot as plt
 
 x = sym.symbols('x')
+
 piece1 = 0
 piece2 = -2*x
 piece3 = (x**3)/10

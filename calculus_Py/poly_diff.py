@@ -6,7 +6,8 @@ import sympy.plotting.plot as symplot
 import numpy as np
 
 x = sym.symbols('x')
-fx = x**2
+i = input('f(x) = ')
+fx = sym.sympify(i)
 
 dfx = sym.diff(fx)
 

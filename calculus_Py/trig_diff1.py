@@ -7,8 +7,8 @@ import sympy as sym
 import sympy.plotting.plot as symplot
 
 x = sym.symbols('x')
-
-fx = sym.cos(x)
+i = input('f(x) = ')
+fx = sym.sympify(i)
 dfx = sym.diff(fx)
 
 xx = np.linspace(0,10,1000)
