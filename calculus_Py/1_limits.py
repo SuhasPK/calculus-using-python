@@ -84,12 +84,14 @@ root.title("Limits *Work under progress*")
 back = Canvas(root, height=500, width=500)
 # Not working as intended. need to check.
 function_label = Label(
-    back, text='Enter the funtion f(x): ').grid(row=0, column=0)
+    back, text='Enter the funtion f(x): ').grid(row=0, column=0, sticky='w', ipadx=10, ipady=8, padx=1, pady=1)
 limit_point_label = Label(
-    back, text='Enter the limit point: ').grid(row=1, column=0)
-function_entry = Entry(back).grid(row=0, column=1)
-limit_point_entry = Entry(back).grid(row=1, column=1)
+    back, text='Enter the limit point: ').grid(row=1, column=0, sticky='w', ipadx=10, ipady=8, padx=1, pady=1)
+function_entry = Entry(back).grid(
+    row=0, column=1, sticky='ew', ipadx=10, ipady=8, padx=1, pady=1)
+limit_point_entry = Entry(back).grid(
+    row=1, column=1, sticky='ew', ipadx=10, ipady=8, padx=1, pady=1)
 calculate_button = Button(back, text='Calculate', command=lambda: limits()).grid(
-    row=2, column=0, columnspan=2)
+    row=2, column=0, columnspan=2, sticky='ew', ipadx=10, ipady=8, padx=1, pady=1)
 back.pack()
 root.mainloop()
